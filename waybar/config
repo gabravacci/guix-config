@@ -1,0 +1,44 @@
+{
+  "height": 0,
+  "modules-left":["sway/workspaces","sway/mode"],
+  "modules-center":["clock"],
+  "modules-right":["pulseaudio","custom/menu","battery","custom/menu","tray"],
+
+  "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "format-charging": "{icon}{capacity}%",
+        "interval": 30,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+  },
+  "tray": {
+    "spacing": 10
+  },
+  "clock": {
+    "format": "{:%b %d %H:%M}",
+    "tooltip-format": "{calendar}"
+  },
+  "sway/mode": {
+    "format": "<span style=\"italic\">[]</span>"
+  },
+  "custom/menu": {
+    "format": "|",
+    "tooltip": false
+  },
+  
+  "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-alt-click": "click-right",
+        "format-muted": "",
+        "format-icons": {
+            "phone": [" ", " ", " ", " "],
+            "default": ["", "", ""]
+        },
+        "scroll-step": 10,
+        "on-click": "pavucontrol",
+        "tooltip": false
+  }
+}

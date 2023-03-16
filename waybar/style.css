@@ -1,0 +1,35 @@
+* {
+    border: none;
+    font-family: "Iosevka";
+    font-size: 12pt;
+}
+window#waybar {
+	background-color: #1f2024; 
+}
+#workspaces,
+#clock,
+#pulseaudio,
+#custom-menu,
+#battery {
+	padding: 0px 7px 0px 7px;
+}
+
+#workspaces button {
+	padding: 0px 0px;
+	border-radius: 0px;
+}
+
+#workspaces button.focused {
+	/*background-color: #fa5ead;*/
+	background-color: #b5bd68;
+	color: #1d2430;
+}
+
+#battery.charging {
+	color: #9ece6a;
+}
+
+#tray {
+	padding: 0px 7px 0px 0px;
+}
+
